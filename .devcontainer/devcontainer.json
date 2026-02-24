@@ -5,7 +5,7 @@
     "ghcr.io/devcontainers/features/redis-server:1": {}
   },
   "forwardPorts": [3000, 3001, 6379],
-  "postCreateCommand": "npm install",
+  "postCreateCommand": "curl -fsSL https://claude.ai/install.sh | bash && npm install",
   "customizations": {
     "vscode": {
       "settings": {
